@@ -474,11 +474,6 @@ jobs:
         run: |
           $vsix = (Get-ChildItem *.vsix | Select-Object -ExpandProperty Name)
           npx extest install-vsix --storage .test-resources --extensions_dir .test-resources --type insider --vsix_file $vsix
-
-      - name: proposal api support
-        run: |
-          mkdir -p $HOME/.vscode-insiders
-          echo '{"enable-proposed-api": ["TeamsDevApp.ms-teams-vscode-extension"]}' > $HOME/.vscode-insiders/argv.json
           
       - name: Run UI Test(ubuntu)
         if: matrix.os == 'ubuntu-latest'
