@@ -3955,7 +3955,7 @@ describe("scaffold question", () => {
       }
     });
 
-    it("api plugin from scratch", async () => {
+    it("api plugin from scratch with auth enabled", async () => {
       mockedEnvRestore = mockedEnv({ [FeatureFlagName.CopilotAuth]: "true" });
       const question = apiAuthQuestion();
       const inputs: Inputs = {
@@ -3973,7 +3973,7 @@ describe("scaffold question", () => {
       }
     });
 
-    it("api plugin from scratch", async () => {
+    it("api plugin from scratch with auth disabled", async () => {
       mockedEnvRestore = mockedEnv({ [FeatureFlagName.CopilotAuth]: "false" });
       const question = apiAuthQuestion();
       const inputs: Inputs = {
