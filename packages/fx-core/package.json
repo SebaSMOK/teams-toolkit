@@ -93,7 +93,7 @@
     "@azure/msal-node": "^2.6.6",
     "@azure/storage-blob": "^12.7.0",
     "@feathersjs/hooks": "^0.6.5",
-    "@microsoft/dev-tunnels-contracts": "1.1.9",
+    "@microsoft/dev-tunnels-contracts": "1.1.36",
     "@microsoft/dev-tunnels-management": "1.1.9",
     "@microsoft/m365-spec-parser": "workspace:^",
     "@microsoft/teamsfx-api": "workspace:*",
