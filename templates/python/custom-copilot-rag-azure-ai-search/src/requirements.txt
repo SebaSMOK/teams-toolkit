@@ -3,3 +3,6 @@ aiohttp
 azure-search
 azure-search-documents
 teams-ai~=1.1.0
+certifi>=2024.7.4 # not directly required, pinned by Snyk to avoid a vulnerability
+idna>=3.7 # not directly required, pinned by Snyk to avoid a vulnerability
+requests>=2.32.2 # not directly required, pinned by Snyk to avoid a vulnerability
