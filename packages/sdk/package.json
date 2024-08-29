@@ -24,7 +24,9 @@
     "test:e2e": "npm run test:e2e:node && npm run test:e2e:browser",
     "ui-test": "mocha --no-timeouts -r test/mocha.env.ts -r ts-node/register test/ui/**/*.spec.ts --exit",
     "check-sensitive": "npx eslint --plugin 'no-secrets' --cache --ignore-pattern 'package.json' --ignore-pattern 'package-lock.json'",
-    "precommit": "npm run check-sensitive && lint-staged"
+    "precommit": "npm run check-sensitive && lint-staged",
+    "prepublish": "npm run snyk-protect",
+    "snyk-protect": "snyk-protect"
   },
   "files": [
     "dist/*js",
@@ -57,7 +59,8 @@
     "botframework-schema": "^4.22.1",
     "jwt-decode": "^3.1.2",
     "tedious": "^14.3.0",
-    "uuid": "^8.3.2"
+    "uuid": "^8.3.2",
+    "@snyk/protect": "latest"
   },
   "peerDependencies": {
     "@microsoft/teams-js": "^2.19.0"
@@ -147,5 +150,6 @@
     "*.{js,jsx,css,ts,tsx}": [
       "npx eslint --cache --fix --quiet"
     ]
-  }
+  },
+  "snyk": true
 }
