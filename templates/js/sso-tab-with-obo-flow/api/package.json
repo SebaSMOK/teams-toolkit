@@ -9,15 +9,19 @@
     "dev:teamsfx": "env-cmd --silent -f .localConfigs npm run dev",
     "dev": "func start --javascript --language-worker=\"--inspect=9229\" --port \"7071\" --cors \"*\"",
     "start": "npx func start",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepublish": "npm run snyk-protect",
+    "snyk-protect": "snyk-protect"
   },
   "dependencies": {
     "@azure/functions": "^4.0.0",
     "@microsoft/teamsfx": "^2.0.0",
     "@microsoft/microsoft-graph-client": "^3.0.1",
-    "isomorphic-fetch": "^3.0.0"
+    "isomorphic-fetch": "^3.0.0",
+    "@snyk/protect": "latest"
   },
   "devDependencies": {
     "env-cmd": "^10.1.0"
-  }
+  },
+  "snyk": true
 }
