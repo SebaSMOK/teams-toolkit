@@ -94,7 +94,7 @@
   },
   "dependencies": {
     "@azure/core-auth": "^1.4.0",
-    "@azure/identity": "^4.1.0",
+    "@azure/identity": "^4.2.1",
     "@microsoft/dev-tunnels-contracts": "1.1.9",
     "@microsoft/teamsfx-api": "workspace:*",
     "@microsoft/teamsfx-core": "workspace:*",
@@ -102,7 +102,7 @@
     "underscore": "^1.12.1",
     "validator": "^13.7.0",
     "vscode-jsonrpc": "^6.0.0",
-    "ws": "^8.2.3"
+    "ws": "^8.17.1"
   },
   "optionalDependencies": {
     "keytar": "^7.7.0"
