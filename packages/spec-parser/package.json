@@ -38,10 +38,10 @@
   "homepage": "https://github.com/OfficeDev/TeamsFx",
   "sideEffects": false,
   "dependencies": {
-    "@apidevtools/swagger-parser": "^10.1.0",
+    "@apidevtools/swagger-parser": "^10.1.1",
     "@microsoft/teams-manifest": "workspace:*",
     "fs-extra": "^11.2.0",
-    "js-yaml": "^4.1.0",
+    "js-yaml": "^4.1.1",
     "openapi-types": "^7.2.3",
     "swagger2openapi": "^7.0.8"
   },
