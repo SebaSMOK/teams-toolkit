@@ -83,7 +83,7 @@
     "gen:cli": "npx ts-node ./src/question/generator.ts && npx prettier --write \"src/question/options/*.ts\" && npx prettier --write \"src/question/inputs/*.ts\""
   },
   "dependencies": {
-    "@apidevtools/swagger-parser": "^10.1.0",
+    "@apidevtools/swagger-parser": "^10.1.1",
     "@azure/arm-appservice": "^13.0.0",
     "@azure/arm-resources": "~5.0.1",
     "@azure/arm-storage": "^17.2.1",
@@ -112,7 +112,7 @@
     "iconv-lite": "^0.6.3",
     "ignore": "^5.1.8",
     "js-base64": "^3.6.0",
-    "js-yaml": "^4.0.0",
+    "js-yaml": "^4.1.1",
     "jsonschema": "^1.4.0",
     "klaw": "^3.0.0",
     "md5": "^2.3.0",
